@@ -22,10 +22,12 @@ public class Test {
 		// oh look, it's 1970
 		KITBook b = new KITBook(p1, p2, p3, t);
 		
-		assert b.containsPerson(p1) == true;
+		if (b.containsPerson(p1) == true)
+			System.out.println("Klaus-Dieter is already using KittehBook to find new friends!");
 		b.getProfile(p1);
 		b.addFriendship(p3, p2);
-		assert b.areFriends(p2, p3) == true;
+		if (b.areFriends(p2, p3) == true)
+			System.out.println("Alexander and Florian are friends!");
 		b.sendMessage(p1, p2, "¡Hola Sir Alexander!");
 		
 		Profile p = new Profile(p2);
@@ -33,8 +35,10 @@ public class Test {
 		p.addInterestFor(Topic.DUBSTEP_TOPIC);
 		p.addInterestFor(Topic.JAZZ_TOPIC);
 		p.removeInterestFor(Topic.JAZZ_TOPIC);
-		assert p.hasInterestFor(Topic.DUBSTEP_TOPIC) == true;
-		assert p.hasInterestFor(Topic.JAZZ_TOPIC) == false;
+		if (p.hasInterestFor(Topic.DUBSTEP_TOPIC) == true)
+			System.out.println("Alexander likes dubstep!");
+		if (p.hasInterestFor(Topic.JAZZ_TOPIC) == false)
+			System.out.println("Alexander doesn't really like Jazz...");;
 		
 		System.out.println(p2.toString());
 		System.out.println(p.toString());

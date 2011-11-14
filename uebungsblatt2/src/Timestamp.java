@@ -77,8 +77,8 @@ public class Timestamp {
 	 * @return a short description of this timestamp instance
 	 */
 	public String toString() {
-		return this.getYear() + "-" + this.getMonth() + "-" + this.getDay() + " " + 
-				this.getHour() + ":" + this.getMinute();
+		return this.getYear() + "-" + this.getMonth() + "-" + this.getDay() + " "
+				+ this.getHour() + ":" + this.getMinute();
 	}
 
 
