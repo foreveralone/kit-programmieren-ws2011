@@ -111,31 +111,31 @@ public class Profile {
 	private void setInterestFor(Topic topic, boolean status) {
 		// Bitch please!
 		if (topic == Topic.JAZZ_TOPIC) {
-			this.likesJazz = true;
+			this.likesJazz = status;
 		}
 		if (topic == Topic.SOCCER_TOPIC) {
-			this.likesSoccer = true;
+			this.likesSoccer = status;
 		}
 		if (topic == Topic.VOLLEYBALL_TOPIC) {
-			this.likesVolleyball = true;
+			this.likesVolleyball = status;
 		}
 		if (topic == Topic.RACING_TOPIC) {
-			this.likesRacing = true;
+			this.likesRacing = status;
 		}
 		if (topic == Topic.ROCK_TOPIC) {
-			this.likesRock = true;
+			this.likesRock = status;
 		}
 		if (topic == Topic.CLASSIC_TOPIC) {
-			this.likesClassic = true;
+			this.likesClassic = status;
 		}
 		if (topic == Topic.DUBSTEP_TOPIC) {
-			this.likesDubstep = true;
+			this.likesDubstep = status;
 		}
 		if (topic == Topic.SWIMMING_TOPIC) {
-			this.likesSwimming = true;
+			this.likesSwimming = status;
 		}
 		if (topic == Topic.PARTY_TOPIC) {
-			this.likesParty = true;
+			this.likesParty = status;
 		}		
 	}
 	
