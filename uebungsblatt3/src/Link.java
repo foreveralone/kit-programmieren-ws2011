@@ -55,7 +55,7 @@ public class Link {
 	 */
 	public boolean equals(Link other) {
 		// if the targets are difference, return not equal
-		if (!this.getTarget().equals(other.getTarget()))
+		if (this.getTarget() != null && other.getTarget() != null && !this.getTarget().equals(other.getTarget()))
 			return false;
 
 		// check if all the other topics exist here
